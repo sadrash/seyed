@@ -1,0 +1,117 @@
+.projects {
+  background-color: rgb(17, 27, 17);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row: auto;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  margin: 0;
+  padding-top: 6rem;
+  #header{
+    position: absolute;
+    top: 0;
+    right: 40%;
+    padding: 1rem;
+    color: rgb(21, 255, 0);
+    font-weight: 700;
+  }
+
+  img {
+    width: 260px;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    margin: 2rem;
+   
+  }
+
+  .Modal-1 {
+    display: flex;
+    flex-direction: column;
+
+    .text {
+      display: block;
+      margin: 2rem;
+      h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: -2rem;
+        margin-bottom: 1rem;
+        color: rgb(60, 255, 0);
+      }
+      p {
+        text-align: left;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        max-width: 400px;
+      }
+      button {
+        background-color: rgb(97, 243, 0);
+        border: none;
+        margin-top: 1em;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: 0.3s;
+        color: black;
+      }
+      button:hover{
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    #header{
+      right: 35%;
+    }
+    img{
+      width: 450px;
+    }
+  }
+}
+@media screen and (max-width: 970px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    #header{
+      right: 40%;
+    }
+    img{
+      width: 350px;
+    }
+   
+    .Modal-1{
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  .projects {
+    grid-template-columns: auto;
+    #header{
+      right: 32%;
+    }
+    img{
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .projects {
+    grid-template-columns: auto;
+    #header{
+      right: 32%;
+    }
+    img{
+      width: 300px;
+    }
+  }
+}

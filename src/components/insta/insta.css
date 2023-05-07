@@ -1,0 +1,37 @@
+.insta {
+  background-color: rgb(17, 27, 17);
+  width: 100%;
+  padding: 2rem;
+}
+.insta video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.insta .card1,
+.insta .card2,
+.insta .card3 {
+  margin: 1rem;
+}
+.insta .card1 h2,
+.insta .card2 h2,
+.insta .card3 h2 {
+  color: rgb(26, 255, 0);
+  text-transform: capitalize;
+}
+.insta .card1 p,
+.insta .card2 p,
+.insta .card3 p {
+  color: rgba(117, 221, 85, 0.685);
+}
+
+@media screen and (min-width: 748px) {
+  .insta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .insta video {
+    height: auto;
+  }
+}/*# sourceMappingURL=insta.css.map */

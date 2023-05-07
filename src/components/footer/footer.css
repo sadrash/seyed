@@ -1,0 +1,114 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  width: 100%;
+  background-color: rgb(17, 27, 17);
+  padding: 1rem 3rem;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+.footer .left {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  text-transform: uppercase;
+}
+.footer p span {
+  color: rgb(0, 255, 42);
+}
+.footer h3 {
+  color: rgba(0, 255, 0, 0.568);
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.footer h4 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: normal;
+  margin-left: 2rem;
+}
+.footer .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .center .right {
+  display: flex;
+  height: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.footer .center .right button {
+  background-color: rgb(97, 243, 0);
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+  padding-top: 0.4rem;
+  z-index: 1;
+  border-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.footer .center .right input {
+  border-radius: 5px;
+  background-color: rgb(94, 94, 94);
+  color: rgb(255, 255, 255);
+  transform: translateX(10px);
+  width: 250px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.footer .social-icons {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+.footer .social-icons .icon {
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #ffffff;
+}
+.footer .social-icons .icon:hover {
+  transform: scale(1.5);
+  color: rgb(123, 255, 0);
+}
+
+@media screen and (max-width: 1040px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 740px) {
+  .footer {
+    display: block;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 1rem;
+  }
+  .footer .left {
+    display: flex;
+    align-items: center;
+  }
+  .footer .left h4 {
+    font-size: 16px;
+    transform: translateY(-7px);
+  }
+}/*# sourceMappingURL=footer.css.map */

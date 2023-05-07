@@ -1,0 +1,151 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.795);
+  #cta {
+    z-index: 111;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(214, 252, 0);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  #cta:hover {
+    transform: scale(1.2);
+  }
+  .logo {
+    cursor: pointer;
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.2rem;
+
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+      }
+      span {
+        color: rgb(123, 255, 0);
+      }
+    }
+  }
+
+  .nav-menu {
+    display: flex;
+    li {
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 0.3s;
+
+      a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        font-size: 14px;
+        padding: 0 1rem;
+      }
+    }
+    li:hover {
+      transform: scale(1.2);
+   
+      a {
+        color: rgb(97, 243, 0);
+      }
+    }
+  }
+  .nav-menu .active{
+    color: rgb(97, 243, 0);
+    font-size: 17px;
+
+  }
+  
+  .hamburgur {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    color: rgb(255, 255, 255);
+  }
+}
+
+.navbar-bg {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: aliceblue;
+}
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 85vh;
+  top: -100vh;
+  left: 0;
+  position: absolute;
+  justify-content: space-between;
+  color: rgb(255, 255, 255, 95);
+  background-color: rgba(0, 0, 0, 0.863);
+  transition: 0.5s ease;
+  
+  
+
+  .mobile-nav {
+    margin: 0 1rem;
+  }
+  li {
+    text-transform: uppercase;
+    padding: 1.2rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(123, 255, 0);
+    font-weight: 700;
+  }
+  li:hover {
+    color: rgb(123, 255, 0);
+  }
+  .social-icons {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    .icon {
+      margin: 0 1rem;
+      cursor: pointer;
+      transition: 0.5s;
+      color: #ffffff;
+    }
+    .icon:hover {
+      transform: scale(1.5) translateY(-10px);
+      color: rgb(123, 255, 0);
+    }
+  }
+}
+.active {
+  top: 80px;
+}
+
+@media screen and (max-width: 840px) {
+  .navbar {
+    .logo {
+      h2 {
+        font-size: 15px;
+      }
+    }
+    #cta {
+      display: none;
+    }
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+  .navbar {
+    .nav-menu {
+      display: none;
+    }
+    .hamburgur {
+      display: block;
+    }
+  }
+}

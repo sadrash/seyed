@@ -1,0 +1,34 @@
+.insta {
+  background-color: rgb(17, 27, 17);
+  width: 100%;
+  padding: 2rem;
+
+  video {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    margin: 1rem;
+    h2 {
+      color: rgb(26, 255, 0);
+      text-transform: capitalize;
+    }
+    p {
+      color: rgba(117, 221, 85, 0.685);
+    }
+  }
+}
+
+@media screen and (min-width: 748px) {
+  .insta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    video {
+      height: auto;
+    }
+  }
+}

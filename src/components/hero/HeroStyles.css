@@ -1,0 +1,103 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.hero .content {
+  font-weight: 700;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
+  width: auto;
+  margin: auto;
+  padding: 1rem 2rem;
+  color: rgb(255, 255, 255);
+}
+.hero .content h1 {
+  font-size: 4rem;
+}
+.hero .content h1 span {
+  color: rgb(97, 243, 0);
+}
+.hero .content h3 {
+  padding: 0.5em;
+  padding-left: 0;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.5rem;
+}
+.hero .content p {
+  color: rgb(255, 255, 255);
+  padding: 1.1em;
+  padding-left: 0;
+  line-height: 1.5rem;
+  max-width: 80%;
+}
+.hero .content .icon {
+  background-color: rgb(97, 243, 0);
+  border: none;
+  margin-top: 1em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: black;
+}
+.hero .content .icon:hover {
+  letter-spacing: 3px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.61);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: multiply;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: rotateY(180deg) rotateX(180deg);
+  z-index: -1;
+}
+
+@media screen and (max-width: 940px) {
+  .hero .content h1 {
+    font-size: 2rem;
+  }
+  .hero .content h3 {
+    font-size: 1.3rem;
+    max-width: 350px;
+  }
+  .hero .content p {
+    max-width: 65%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .hero .content {
+    top: 120px;
+  }
+  .hero .content h1 {
+    font-size: 2rem;
+  }
+  .hero .content h3 {
+    font-size: 1.3rem;
+    max-width: 350;
+  }
+  .hero .content p {
+    max-width: 65%;
+  }
+}/*# sourceMappingURL=HeroStyles.css.map */

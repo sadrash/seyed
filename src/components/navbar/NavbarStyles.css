@@ -1,0 +1,137 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+.navbar #cta {
+  z-index: 111;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(214, 252, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.navbar #cta:hover {
+  transform: scale(1.2);
+}
+.navbar .logo {
+  cursor: pointer;
+}
+.navbar .logo h2 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.navbar .logo h2 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.navbar .logo h2 span {
+  color: rgb(123, 255, 0);
+}
+.navbar .nav-menu {
+  display: flex;
+}
+.navbar .nav-menu li {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.navbar .nav-menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0 1rem;
+}
+.navbar .nav-menu li:hover {
+  transform: scale(1.2);
+}
+.navbar .nav-menu li:hover a {
+  color: rgb(97, 243, 0);
+}
+.navbar .nav-menu .active {
+  color: rgb(97, 243, 0);
+  font-size: 17px;
+}
+.navbar .hamburgur {
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-bg {
+  background-color: rgba(0, 0, 0, 0.822);
+  color: aliceblue;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: 85vh;
+  top: -100vh;
+  left: 0;
+  position: absolute;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.863);
+  transition: 0.5s ease;
+}
+.mobile-menu .mobile-nav {
+  margin: 0 1rem;
+}
+.mobile-menu li {
+  text-transform: uppercase;
+  padding: 1.2rem 1rem;
+  text-align: left;
+  cursor: pointer;
+  border-bottom: 1px solid rgb(123, 255, 0);
+  font-weight: 700;
+}
+.mobile-menu li:hover {
+  color: rgb(123, 255, 0);
+}
+.mobile-menu .social-icons {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+}
+.mobile-menu .social-icons .icon {
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #ffffff;
+}
+.mobile-menu .social-icons .icon:hover {
+  transform: scale(1.5) translateY(-10px);
+  color: rgb(123, 255, 0);
+}
+
+.active {
+  top: 80px;
+}
+
+@media screen and (max-width: 840px) {
+  .navbar .logo h2 {
+    font-size: 15px;
+  }
+  .navbar #cta {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .navbar .nav-menu {
+    display: none;
+  }
+  .navbar .hamburgur {
+    display: block;
+  }
+}/*# sourceMappingURL=NavbarStyles.css.map */
